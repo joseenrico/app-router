@@ -5,17 +5,38 @@ import { NextResponse } from "next/server";
 const data = [
     {
         id: 1,
-        title: 'Sepatu Baru',
-        price: 1199000,
+        title: 'Nike Court Vision Low',
+        price: 1069000,
         image:
             "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44f222ab-96b6-43b9-82e7-9a1bd888611d/NIKE+COURT+VISION+LO.png"
     },
     {
         id: 2,
-        title: 'Sepatu Nike',
+        title: "Nike Air Force 1'07",
+        price: 1549000,
+        image:
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/350e7f3a-979a-402b-9396-a8a998dd76ab/AIR+FORCE+1+%2707.png"
+    },
+    {
+        id: 3,
+        title: 'Nike P-600',    
         price: 1520000,
         image:
-            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/zfxux6teg42i7ecqsggx/GRANDSTAND+II.png"
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
+    },
+    {
+        id: 4,
+        title: 'Nike P-600',    
+        price: 1520000,
+        image:
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
+    },
+    {
+        id: 5,
+        title: 'Nike P-600',    
+        price: 1520000,
+        image:
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
     }
 ]
 
