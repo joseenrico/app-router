@@ -1,17 +1,21 @@
-import DetailProductPage from "@/app/product/[...slug]/page";
+import ProductPage from "@/app/product/[[...slug]]/page";
 import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
 const data = [
     {
         id: 1,
-        name: 'Sepatu Baru',
-        price: 100000
+        title: 'Sepatu Baru',
+        price: 1199000,
+        image:
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44f222ab-96b6-43b9-82e7-9a1bd888611d/NIKE+COURT+VISION+LO.png"
     },
     {
         id: 2,
-        name: 'Baju Baru',
-        price: 185000
+        title: 'Sepatu Nike',
+        price: 1520000,
+        image:
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/zfxux6teg42i7ecqsggx/GRANDSTAND+II.png"
     }
 ]
 
