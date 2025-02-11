@@ -30,13 +30,6 @@ const data = [
         price: 1520000,
         image:
             "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
-    },
-    {
-        id: 5,
-        title: 'Nike P-600',    
-        price: 1520000,
-        image:
-            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
     }
 ]
 
