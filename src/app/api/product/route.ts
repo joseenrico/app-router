@@ -1,4 +1,4 @@
-import ProductPage from "@/app/product/[[...slug]]/page";
+import ProductPage from "@/app/product/page";
 import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
