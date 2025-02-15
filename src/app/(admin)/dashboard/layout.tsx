@@ -1,4 +1,4 @@
-import ProductPage from "@/app/product/[[...slug]]/page";
+import ProductPage from "@/app/product/page";
 
 export default function Layout({
     children,
