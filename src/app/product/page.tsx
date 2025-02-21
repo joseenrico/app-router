@@ -16,7 +16,7 @@ export default async function ProductPage(props: ProductPageProps) {
                     <Link
                         href={`/product/detail/${product.id}`}
                         key={product.id}
-                        className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-5"
+                        className="w-11/12 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-5"
                     >
                         {/* <a href="#"> */}
                         <img className="p-8 rounded-t-lg object-cover h-96 w-full"
@@ -25,7 +25,7 @@ export default async function ProductPage(props: ProductPageProps) {
                         {/* </a> */}
                         <div className="px-5 pb-5">
                             {/* <a href="#"> */}
-                            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white truncate">{product.title}</h5>
+                            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white truncate">{product.name}</h5>
                             {/* </a> */}
                             <div className="flex items-center justify-between mt-3">
                             </div>
