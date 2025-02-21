@@ -1,4 +1,5 @@
 import ProductPage from "@/app/product/page";
+import { retrieveData, retrieveDataById } from "@/lib/firebase/service";
 import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
@@ -19,14 +20,14 @@ const data = [
     },
     {
         id: 3,
-        title: 'Nike P-600',    
+        title: 'Nike P-600',
         price: 1520000,
         image:
             "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
     },
     {
         id: 4,
-        title: 'Nike P-600',    
+        title: 'Nike P-600',
         price: 1520000,
         image:
             "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1bceaf-21bc-44b5-853b-33eac3c34e2b/WMNS+NIKE+P-6000.png"
@@ -37,7 +38,7 @@ export async function GET(request: NextApiRequest) {
     const { searchParams } = new URL(request.url || '');
     const id = searchParams.get('id');
     if (id) {
-        const detailProduct = data.find((product) => product.id === Number(id));
+        const detailProduct = await retrieveDataById('products', id);
         if (detailProduct) {
             return NextResponse.json({
                 status: 200,
@@ -52,5 +53,6 @@ export async function GET(request: NextApiRequest) {
         });
     }
 
-    return NextResponse.json({ status: 200, message: "Success", data });
+    const products = await retrieveData('products');
+    return NextResponse.json({ status: 200, message: "Success", data: products });
 }
